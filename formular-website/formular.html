@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta description er den sorte tekst, der vises i søgeresultatet på Google -->
+    <meta name="description" content="Se min fede side!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <!-- ul betyder "unordered list" -->
+    <ul>
+        <!-- li betyder "list item" -->
+        <li>Kat</li>
+        <li>Hund
+            <ul>
+                <li>Gravhund</li>
+                <li>Puddel</li>
+                <li>Husky</li>
+            </ul>
+        </li>
+        <li>Rotte</li>
+    </ul>
+    <ol>
+        <li>Mus</li>
+        <li>Fugl</li>
+        <li>Fisk</li>
+    </ol>
+    <table border="1">
+        <!-- tr = table row -->
+        <tr>
+            <!-- td = table data -->
+            <th>Mandag</th>
+            <th>Tirsdag</th>
+        </tr>
+        <tr>
+            <td>Musik</td>
+            <!-- rowspan = cellen strækker sig over to rækker i tabellen -->
+            <td rowspan="2">Matematik</td>
+        </tr>
+        <tr>
+            <td>Dansk</td>
+        </tr>
+    </table>
+    <br>
+    <form action="send-info.php">
+        <p>Fornavn</p>
+        <input type="text" name="fornavn" required>
+        <p>Efternavn</p>
+        <input type="text" name="efternavn" placeholder="Skriv dit efternavn her...">
+        <p>Email</p>
+        <input type="email" name="email">
+        <p>Password</p>
+        <input type="password" name="kodeord" autofocus>
+        <p>Kommentar</p>
+        <textarea cols="40" rows="8" name="comments"></textarea>
+        <p>Vælg køn</p>
+        <input type="radio" name="gender" value="mand">Mand
+        <input type="radio" name="gender" value="kvinde">Kvinde
+        <p>Vælg farve</p>
+        <input type="checkbox" name="color" value="green">Grøn
+        <input type="checkbox" name="color" value="blue">Blå
+        <input type="checkbox" name="color" value="yellow" checked="checked">Gul
+        <input type="checkbox" name="color" value="red">Rød 
+        <p>Vælg land</p>
+        <select name="land">
+            <option value="DK">Danmark</option>
+            <option value="SE">Sverige</option>
+            <option value="DE">Tyskland</option>
+            <option value="NO">Norge</option>
+            <option value="JY">Jylland</option>
+        </select>
+        <p>Hvordan var maden i kantinen?</p>
+        Dårlig<input type="range" min="1" max="10" name="rating">God
+        <br>
+        <input type="submit" value="Send afsted!">
+    </form>
+    <!-- en iframe viser en anden hjemmeside på min side -->
+    <iframe src="https://www.cphbusiness.dk" width="600" height="800" frameborder="0">
+    </iframe>
+    <p>&copy; Morten&reg; 2021</p>
+</body>
+</html>
