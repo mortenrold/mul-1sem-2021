@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling med CSS</title>
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
+    <!-- Google Fonts slut -->
+
+    <!-- "internt stylesheet" (reglerne gælder for hele siden)-->
+    <style>
+        h1 {
+            color: purple;
+            background-color: lightyellow;
+            text-indent: 30px;
+            /* helvetica er ikke "web safe", men det er arial */
+            font-family: lato, helvetica, arial, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            /* understregning med 1px tykkelse */
+            text-decoration: underline 1px;
+            letter-spacing: -2px;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+            width: 500px;
+            text-align: justify;
+            line-height: 140%;
+        }
+        body {
+            background-color: black;
+            background-image: url("images/hedgehog.jpg");
+            background-repeat: no-repeat;
+            /* background-position: 50% 400px; */
+            background-size: cover;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        /* links jeg ikke har besøgt før */
+        a:link {
+            color: blue;
+        }
+        /* links jeg har besøgt før */
+        a:visited {
+            color: green;
+        }
+        /* når musen er hen over... */
+        a:hover {
+            color: purple;
+            font-family: lato, sans-serif;
+            font-size: 20px;
+            background-color: white;
+        }
+        /* når jeg klikker og holder musen nede */
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- "inline styling" (CSS er puttet ind i HTML-tagget) -->
+    <h1 style="color: red;">Styling med CSS</h1>
+    <p style="color: #DEA800; text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, cumque tenetur. Fugit expedita consequatur ratione ex molestias atque a qui cum pariatur veniam, inventore saepe!</p>
+    <h1>Overskrift to</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odio praesentium quia, itaque pariatur facere! Voluptatum nulla <a href="http://cphbusiness.dk">laudantium dolore</a>, incidunt reiciendis facere cumque fugit reprehenderit voluptatem odio dignissimos aliquam molestias voluptate recusandae ipsum earum sint maiores! Atque nihil quibusdam repellendus tempora laudantium nam commodi odio impedit ex delectus itaque provident repudiandae sed, vitae fuga magnam perferendis? Deserunt cupiditate rerum dolorum blanditiis delectus consectetur quasi, soluta necessitatibus nesciunt quae cum deleniti quidem provident aspernatur suscipit adipisci culpa possimus distinctio iste voluptatem illo aut, numquam a debitis? Ea nihil consectetur iure accusamus animi? Blanditiis alias ducimus accusantium maiores cupiditate quasi rem deserunt aperiam sit, consequuntur modi tempore laudantium aspernatur velit doloremque officiis suscipit quae quo libero natus doloribus sequi consequatur fuga cum. Esse optio excepturi, cum fuga ea nemo qui velit dolorum eveniet et fugiat recusandae id eum animi at? Corporis delectus totam unde repellendus minus voluptates laudantium ullam nobis tempora adipisci, atque iste, eum, quis quasi dolores ipsam aperiam id est? Delectus nesciunt facilis fugit ipsam harum voluptatem repellat quia? Repellat, esse doloremque modi aliquid consectetur quibusdam cum. Suscipit, expedita doloribus nam velit veniam magnam eum, delectus blanditiis qui voluptas, explicabo in natus? Vel ab dolorem temporibus architecto a impedit facilis.</p>
+    <img src="images/hedgehog-small.jpg">
+</body>
+</html>
