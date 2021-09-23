@@ -1,0 +1,71 @@
+/*
+    Box-modellen:
+                            margin
+                            border
+                            padding
+    margin border padding  [content]  padding border margin
+                            padding
+                            border
+                            margin
+*/
+
+body {
+    /* body's "børn" arver dens egenskaber */
+    font-family: helvetica, arial, sans-serif;
+}
+h1 {
+    color: cornflowerblue;
+    border: 2px solid red; 
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #ddd;
+}
+p {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.2em;
+}
+a {
+    border: 1px dashed purple;
+    padding: 4px;
+    margin-left: 35px;
+}
+a:hover {
+    background-color: #ddd;
+}
+#lort {
+    border: 2px solid brown;
+}
+.fireben {
+    color: green;
+}
+.ikkearme {
+    color: rgb(211, 140, 8);
+}
+/* her styler jeg kun de a'er der bor inden i et p, som bor inde i body */
+body p a {
+    margin-left: 0;
+}
+.container {
+    border: 1px solid black;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    float: left;
+}
+.container-2 {
+    background-color: #ddd;
+    /* 4 værdier i denne rækkefølge: top, højre, bund, venstre */
+    padding: 10px 15px 10px 15px;
+    width: 500px;
+    float: left;
+}
+.mother {
+    /* den store div skal have samme bredde som de to små tilsammen (width + margin + padding + border) */
+    width: 962px;
+    margin: 0 auto;
+}
+.billede {
+    float: right;
+    padding-left: 10px;
+}
