@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h2>"Normale" div'er</h2>
+    <div class="container">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3</p></div>
+    </div>
+
+    <h2>Flexbox</h2>
+    <div class="container flex-container">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3<br>3</p></div>
+    </div>
+
+    <h2>"Børn" til højre</h2>
+    <div class="container flex-container right">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3<br>3</p></div>
+    </div>
+
+    <h2>Fordel "børn" jævnt</h2>
+    <div class="container flex-container jaevnt">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3<br>3</p></div>
+    </div>
+
+    <h2>Lodret fordeling</h2>
+    <div class="container flex-container lodret">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3<br>3</p></div>
+    </div>
+
+    <h2>Skift til lodret akse</h2>
+    <div class="container flex-container drej">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item"><p>3<br>3</p></div>
+    </div>
+
+    <h2>Et bestemt barn skifter plads</h2>
+    <div class="container flex-container">
+        <div class="flex-item"><p>1</p></div>
+        <div class="flex-item"><p>2</p></div>
+        <div class="flex-item byt"><p>3<br>3</p></div>
+    </div>
+    
+</body>
+</html>

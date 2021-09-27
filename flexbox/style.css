@@ -1,0 +1,58 @@
+/* browser reset - nulstiller alle tags (deres margin + padding) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 15px;
+}
+.container {
+    background-color: #ddd;
+    padding: 15px;
+}
+.flex-container {
+    display: flex;
+}
+.flex-item {
+    background-color: #1980e7;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+}
+p {
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 4em;
+}
+h2 {
+    font-family: helvetica, arial, sans-serif;
+    padding-top: 30px;
+}
+.right {
+    /* vandret placering */
+    justify-content: flex-end;
+}
+.jaevnt {
+    justify-content: space-evenly;
+}
+.lodret {
+    /* lodret placering */
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+}
+.drej {
+    /* skifter fra vandret til lodret fokus */
+    flex-direction: column;
+    /* denne styrer nu vandret placering */
+    align-items: center;
+    height: 700px;
+    /* denne styrer nu lodret placering */
+    justify-content: center;
+}
+.byt {
+    /* Alt har order "0" som udgangspunkt. Her giver vi et barn order "-1" */
+    order: -1;
+    background-color: rgb(63, 156, 71);
+}
