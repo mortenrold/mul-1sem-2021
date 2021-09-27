@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Normale div'er</h2>
+    <div class="parent">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child">
+            <p>3</p>
+        </div>
+    </div>
+    <h2>Forældre er en flex-forældre</h2>
+    <div class="parent flex-parent">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child">
+            <p>3</p>
+        </div>
+    </div>
+
+    <h2>Flyt "børn" til højre</h2>
+    <div class="parent flex-parent right">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child">
+            <p>3</p>
+        </div>
+    </div>
+
+    <h2>Fordel "børn" jævnt</h2>
+    <div class="parent flex-parent jaevnt">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child">
+            <p>3</p>
+        </div>
+    </div>
+
+    <h2>Fordel "børn" lodret</h2>
+    <div class="parent flex-parent lodret">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child">
+            <p>3<br>3</p>
+        </div>
+    </div>
+
+    <h2>Flyt 3. barn først</h2>
+    <div class="parent flex-parent">
+        <div class="child">
+            <p>1</p>
+        </div>
+        <div class="child">
+            <p>2</p>
+        </div>
+        <div class="child special">
+            <p>3<br>3</p>
+        </div>
+    </div>
+</body>
+</html>

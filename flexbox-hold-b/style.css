@@ -1,0 +1,54 @@
+/* "browser reset" - nulstiller alle tags margin og padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 15px;
+    font-family: helvetica, arial, sans-serif;
+}
+.parent {
+    background-color: #ddd;
+    padding: 15px;
+}
+.child {
+    background-color: #5e7cd6;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+}
+h2 {
+    margin: 30px 0 10px 0;
+}
+p {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3em; 
+    color: white;
+    text-align: center;
+}
+.flex-parent {
+    /* gør forældre til flex-container */
+    display: flex;
+}
+.right {
+    justify-content: flex-end;
+}
+.jaevnt {
+    /* fordel med ens luft i mellem børn */
+    justify-content: space-evenly;
+}
+.lodret {
+    height: 500px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.tilt {
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.special {
+    order: -1;
+    background-color: rgb(87, 173, 87);
+}
