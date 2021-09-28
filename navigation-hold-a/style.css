@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.simple {
+    display: flex;
+    justify-content: space-between;
+    font-family: helvetica, arial, sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #ddd;
+}
+.simple a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: rebeccapurple;
+    padding: 3px;
+}
+.simple a:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.tabs {
+    margin-top: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.tabs nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.tabs a {
+    border: 1px solid black;
+    padding: 10px 20px 9px 20px;
+    margin-bottom: -1px;
+    border-radius: 10px 10px 0 0;
+    text-decoration: none;
+    font-family: helvetica, arial, sans-serif;
+    color: black;
+    background-image: linear-gradient(#ddd, #bbb);
+}
+.tabs a:hover {
+    background-image: linear-gradient(lightyellow, rgb(236, 236, 201));
+}
+.tabs .active, .tabs .active:hover {
+    background-image: linear-gradient(white, white);
+    border-bottom: 1px solid white;
+    cursor: default;
+}
+
+.drop-down {
+    padding: 30px;
+}
+.drop-down li {
+    display: inline;
+}
+.undermenu {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    visibility: hidden;
+}
+.undermenu li {
+    display: block;
+}
+.fold-ud {
+    position: relative;
+}
+.fold-ud:hover .undermenu {
+    visibility: visible;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
