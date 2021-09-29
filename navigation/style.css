@@ -1,30 +1,39 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
 }
+/* luft imellem sections */
+section {
+    width: 900px;
+    margin: 100px auto;
+}
+
+/* simpel menu */
 .simple {
     display: flex;
     justify-content: space-between;
     font-family: helvetica, arial, sans-serif;
-    width: 75%;
     margin: 0 auto;
     padding: 15px;
-    background: #ddd;
+    background: #eee;
 }
 .simple a {
     text-decoration: none;
     margin-left: 20px;
     color: rebeccapurple;
-    padding: 3px;
+    padding: 5px 8px;
+    border-radius: 3px;
 }
 .simple a:hover {
     background-color: rebeccapurple;
     color: white;
 }
 
+/* faneblade */
 .tabs {
     margin-top: 100px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #aaa;
     display: flex;
     justify-content: center;
 }
@@ -34,45 +43,66 @@
     justify-content: space-around;
 }
 .tabs a {
-    border: 1px solid black;
+    border: 1px solid #aaa;
     padding: 10px 20px 9px 20px;
     margin-bottom: -1px;
     border-radius: 10px 10px 0 0;
     text-decoration: none;
     font-family: helvetica, arial, sans-serif;
     color: black;
-    background-image: linear-gradient(#ddd, #bbb);
+    background-image: linear-gradient(#eee, #ddd);
 }
 .tabs a:hover {
     background-image: linear-gradient(lightyellow, rgb(236, 236, 201));
 }
 .tabs .active, .tabs .active:hover {
-    background-image: linear-gradient(white, white);
+    background-image: linear-gradient(#eee, white);
     border-bottom: 1px solid white;
     cursor: default;
 }
 
+/* drop-down menu */
 .drop-down {
-    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    background: #eee;
 }
 .drop-down li {
     display: inline;
+    float: left;
+    background-color: #eee;
 }
 .undermenu {
+    /* når noget har "absolute" position, vil det placere sig som angivet (top og left) i forhold til sin nærmeste forældre med position "relative" */
     position: absolute;
-    top: 15px;
+    top: 36px;
     left: 0;
+    /* undermenuen er usynlig som udgangspunkt */
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
 }
-.undermenu li {
-    display: block;
-}
+/* denne er forældre til undermenu */
 .fold-ud {
     position: relative;
 }
 .fold-ud:hover .undermenu {
+    /* undermenuen gøres synlig, når musen er hen over ".fold-ud" */
     visibility: visible;
 }
+.drop-down a {
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: helvetica, arial, sans-serif;
+    color: #333;
+}
+.drop-down li:hover {
+    background: lightblue;
+}
+
+
 
 h1 {
     color: rebeccapurple;
