@@ -1,0 +1,73 @@
+/* her styler vi 6 elementer på én gang */
+.logo, .main-nav, .sub-nav, article, .banner, footer {
+    background-color: #ddd;
+    margin-top: 15px;
+}
+.banner, footer {
+    display: none;
+}
+.logo {
+    height: 60px;
+}
+article {
+    height: 500px;
+}
+.sub-nav {
+    height: 60px;
+}
+.main-nav {
+    height: 60px;
+}
+
+/* ændringer til tablet-format */
+@media screen and (min-width: 659px) {
+    footer {
+        display: block;
+        height: 100px;
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        /* når den samlede bredde kommer over 100%, falder noget af indholdet ned under */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo, .sub-nav {
+        width: 19%;
+    }
+    .main-nav, article {
+        width: 80%;
+    }
+}
+
+/* ændringer til desktop-format */
+@media screen and (min-width: 1033px) {
+    .banner {
+        display: block;
+        width: 30%;
+    }
+    article {
+        width: 49%;
+    }
+}
+
+/* stopklods */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* quick fix til mobil */
+@media screen and (max-width: 658px) {
+    .main-nav {
+        /* den får sit eget liv upåvirket af de andre elementers placering */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: coral;
+        width: 100%;
+    }
+}
