@@ -1,0 +1,15 @@
+h1 {
+    color: pink;
+}
+p {
+    text-align: justify;
+}
+/* her har jeg lavet min egen klasse */
+.my-bg {
+    background-color: #ddd;
+}
+/* her overskriver vi en af Bootstraps klasser */
+.btn-secondary {
+    background-color: pink;
+    border-color: red;
+}
