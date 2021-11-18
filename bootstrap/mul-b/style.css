@@ -1,0 +1,30 @@
+/* responsive deign - "mobile first" */
+.kasse1 {
+    background-color: lightseagreen;
+    height: 100px;
+}
+.kasse2 {
+    background-color: lightpink;
+    height: 300px;
+}
+
+/* en media query, der laver et "breakpoint" ved 787px. Kasserne kommer til at stå ved siden af hinanden */
+@media screen and (min-width: 787px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kasse1 {
+        width: 49%;
+    }
+    .kasse2 {
+        width: 49%;
+    }
+}
+
+/* en media query, der laver et breakpoint ved 1107px. Kasserne skifter placering i forhold til hinanden */
+@media screen and (min-width: 1107px) {
+    .kasse1 {
+        order: 1;
+    }
+}

@@ -1,0 +1,8 @@
+h1 {
+    color: cornflowerblue;
+}
+/* her ændrer jeg lidt i en a Bootstrap's klasser */
+.btn-primary {
+    background: purple;
+    border-color: black;
+}
