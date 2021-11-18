@@ -1,0 +1,8 @@
+h1 {
+    color: pink;
+}
+/* her overskriver jeg dele af en af Bootstrap's klasser */
+.btn-primary {
+    background-color: pink;
+    border-color: red;
+}

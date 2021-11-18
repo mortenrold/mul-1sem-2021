@@ -1,0 +1,29 @@
+.kasse1 {
+    background-color: lightblue;
+    height: 100px;
+}
+.kasse2 {
+    background-color: rgb(199, 163, 235);
+    height: 300px;
+}
+
+/* her indsætter vi en media query, så kasserne kommer til at stå ved siden af hinanden */
+@media screen and (min-width: 727px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kasse1 {
+        width: 49%;
+    }
+    .kasse2 {
+        width: 49%;
+    }
+}
+
+/* her indsætter vi en media query, hvor vi bytter rundt på rækkefølgen af de to kasser */
+@media screen and (min-width: 1099px) {
+    .kasse1 {
+        order: 1;
+    }
+}
